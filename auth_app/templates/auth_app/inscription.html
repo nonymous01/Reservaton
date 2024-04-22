@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'auth_app/styles.css' %}">
+
+</head>
+<body>
+    <div class="dex2" >
+        
+        <div class="form"  id="vjk" >
+            {%  if messages %}
+            <div class="erro">
+                {% for message in messages %}
+                <p> {{message}} </p>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form action="{% url 'inscription' %}" method="post" class="item-form">
+                {% csrf_token %}
+                <H1>inscription 👽</H1>
+                {{ form.as_p }}
+                <button type="submit" style="padding: 10px 20px;background-color: rgb(105, 29, 176);border: none;border: 10px;color: white; border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;">je m'inscrit</button>
+            </form>
+            <p class="olink">Deja inscrit! <a href="{% url 'connexion' %}">connexion !</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

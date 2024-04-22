@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1 class="ggggg">CONNEXION</h1>
+            {%  if messages %}
+            <div class="erro">
+                {% for message in messages %}
+                <p> {{message}} </p>
+                {% endfor %}
+            {% endif %}
+    <form action="{% url 'logins' %}" method="post">
+
+        {% csrf_token %}
+        <label for="email">email</label>
+        <input type="text" name="email" id="email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Se connecter">
+    </form>
+</body>
+</html>

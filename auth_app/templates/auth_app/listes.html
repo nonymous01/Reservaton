@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Liste des utilisateurs</h2>
+    <a href="{% url 'deconnexion' %}">deconnexion</a>
+    <table>
+        <tr>
+            <th>username</th>
+            <th>email</th>
+            <th>password</th>
+        </tr>
+        {% for utilisateur in utilisateurs %}
+            <tr>
+                <td>{{ utilisateur.username }}</td>
+                <td>{{ utilisateur.email }}</td>
+                <td>{{ utilisateur.password }}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>

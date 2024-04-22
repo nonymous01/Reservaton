@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(255, 255, 255);
+    justify-content: center;
+}
+.dex2{
+    background-color: rgb(244, 244, 244);
+    width: 320px;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: 0.5px 0.5px 5px 0.5px  rgb(67, 43, 90);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+    background-color: rgba(67, 43, 90, 0.919);
+    position: relative;
+    height: 40px;
+    width: 80%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    color: white;
+}
+h1{
+    color: rgba(67, 43, 90, 0.919);
+}
+.formcon{
+    position: relative;
+    padding-top: 40px;
+}
+.ggggg{
+    color: rgba(67, 43, 90, 0.919);
+    position: relative;
+    top: 20px;
+}
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+.helptext{
+    display: none;
+}
+label{
+    display: none;
+}
+
+.section{
+    width: 100%;
+    height: 250px;
+
+}
+.conternar_1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(46, 37, 114);
+
+}
+.entete1{
+    width: 25%;
+    height: 100%;
+    color: white;
+    padding-top: 12px;
+    justify-content: start;
+    display: flex;
+    color: white;
+
+}
+.entete2{
+    width: 25%;
+    height: 100%;
+    padding-top: 12px;
+    color:  rgb(229, 123, 11);
+}
+.compte{
+    width: 100%;
+    height: 70%;
+    background-color: aquamarine;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+.compte1{
+    width: 100%;
+    height: 30%;
+=
+}
+
+.devis{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(50, 67, 61);
+    font-size: 2rem;
+    padding-top: 10px;
+}
+.devis1{
+    width: 100%;
+    height: 30%;
+=
+}
+.entete3{
+    width: 25%;
+    height: 100%;
+    padding-top: 12px;
+    color: white;
+
+}
+.entete4{
+    width: 15%;
+    height: 100%;
+    justify-content: end;
+    display: flex;
+    padding-top: 12px;
+    color: white;
+}
+
+.conternar_2{
+    background-color: rgb(20, 8, 113);
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    background-color: darkkhaki;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 70px;
+
+}
+.nav1{
+    background-color: rgb(136, 245, 40);
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+    display: flex;
+
+}
+.nav1 input{
+    background-color: white;
+    text-decoration: none;
+    color: orange;
+    border-radius: 20px;
+    height: 50px;
+    border: 2px solid orange;
+    position: relative;
+    top: 30px;
+}
+.nav2{
+    background-color: rgb(223, 140, 234);
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+     display: flex;
+     padding-top: 70px;
+
+}
+.sous1{
+    width: 90px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+     display: flex;
+     padding-top: 1px;
+     flex-wrap: wrap;
+}
+.sous2{
+    width: 90px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 1px;
+    flex-wrap: wrap;
+}
+.sous3{
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 1px;
+    flex-wrap: wrap;
+}
+.conternar_3{
+    background-color: rgb(229, 123, 11);
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     display: flex;
+}
+.tire0{
+color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+.tire1{
+    color: white;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+.tire2{
+color: white;
+      width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+.tire3{
+color: white;
+      width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+.tire4{
+color: white;
+ width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+.tire5{
+color: white;
+ width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+}
+
+.info-user{
+    background-color:aquamarine ;
+    width: 100%;
+    height: auto;
+}
+
+.info1{
+    background-color: rgb(43, 53, 50);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.info2{
+    background-color: rgb(80, 161, 137);
+    width: 100%;
+    height: auto;
+    color: rgb(196, 196, 196);
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.photo{
+    border-radius: 60px;
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    justify-content: center;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.info3{
+    background-color: rgb(80, 161, 137);
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.local{
+    background-color: rgb(178, 126, 49);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.info4{
+    background-color: rgb(49, 178, 116);
+    width: 50%;
+    height: 100%;
+   position: relative;
+    padding-right: 25%;
+}
+.info0 a{
+    font-size: 1.5rem;
+    position: relative;
+    left: 20px;
+    text-decoration: none;
+    color: rgb(178, 126, 49);
+
+}
+.info5{
+    background-color: rgb(178, 15, 137);
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding-right: 15%;
+}
+hgroup{
+    background-color: blueviolet;
+    width: 100%;
+   min-height: 460px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   display: block;
+   padding-top: 80px;
+}
+.group1{
+    width: 85%;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0;
+    border: 1px solid  rgb(229, 123, 11);
+}
+.artisan{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(133, 1, 142);
+    position: relative;
+    top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.2rem;
+    color: rgb(40, 40, 40);
+}
+.artisan1{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(10, 201, 67);
+    position: relative;
+    top: 1.0rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.over:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 103, 52);
+}
+.over {
+    background-color: rgb(217, 104, 12);
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.artisan1 a{
+    text-decoration: none;
+}
+.group2{
+    background-color: rgb(33, 223, 182);
+    width: 100%;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}

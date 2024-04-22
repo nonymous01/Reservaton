@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'auth_app/profil.css' %}">
+</head>
+<body>
+    <div class="conecter">
+        <div class="nav1"><strong>LOGO_YS</strong></div>
+        <div class="nav2"><strong><a href="">Arts</a></strong></div>
+        <div class="nav3"><strong><a href="">Artisanat</a></strong></div>
+        <div class="nav4"><strong> 🤓</strong></div>
+        
+    
+</div>
+<div class="ell">
+    
+    <form action="" method="post">
+        <h2>Formulaire Client</h2><br><br><hr>
+
+        {% csrf_token %}
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+    
+            <label for="ncni">Numéro de CNI:</label>
+            <input type="text" id="ncni" name="ncni" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="alergie">Allergie:</label>
+            <select name="alergie" id="alergie">
+                <option value="">Sélectionnez une option</option>
+                <option value="alimentaires">Alimentaires</option>
+                <option value="animal">Animal</option>
+            </select><br><br>
+    
+            <label for="Toute_demande">Autres demandes:</label><br>
+            <textarea name="Toute_demande" id="Toute_demande" rows="4" cols="50"></textarea><br><br>
+    
+            <label for="telephone">Numéro de téléphone:</label>
+            <input type="text" id="telephone" name="telephone" required><br><br>
+    
+            <label for="Nombre_de_personnes">Nombre de personnes:</label>
+            <input type="number" id="Nombre_de_personnes" name="Nombre_de_personnes"><br><br>
+    
+            <input type="submit" value="Enregistrer">
+        </form>
+   
+</div>
+</body>
+</html>

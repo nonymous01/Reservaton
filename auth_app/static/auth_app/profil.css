@@ -1,0 +1,135 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+body{
+    background-color: rgb(76, 89, 85);
+}
+.conecter{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image_accueil{
+    width: 100%;
+    height: 800px;
+}
+.nav1{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    right: 16%;
+    /* background-color: aqua; */
+    text-align: center;
+}
+.nav2{
+    width: 200px;
+    height: 100%;
+    /* background-color: blue; */
+    justify-content: center;
+    text-align: center;
+ 
+}
+strong{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+}
+.nav3{
+    width: 200px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    /* background-color: blueviolet; */
+}
+.nav4{
+    width: 200px;
+    height: 100%;
+    /* background-color: brown; */
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    left: 16%;
+}
+.texte{
+    width: 650px;
+    height: 200px;
+    /* background-color: red; */
+    position: relative;
+    bottom: 650px;
+    left: 10%;
+}
+
+
+.deconexion{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    bottom: 300px;
+    font-size: 1.7rem;
+    color: white;
+    position: relative;
+    width: 15%;
+    height: 40px;
+    left: 82%;
+    bottom: 320px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Style du formulaire */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style des étiquettes */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garde la largeur totale constante avec les bordures et le remplissage */
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00; /* Couleur orange */
+    color: #fff; /* Texte blanc */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition fluide */
+}
+
+/* Style du bouton de soumission lorsqu'il est survolé */
+input[type="submit"]:hover {
+    background-color: #ff6f00; /* Couleur orange plus foncée */
+}
+

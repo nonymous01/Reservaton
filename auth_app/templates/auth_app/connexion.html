@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'auth_app/styles.css' %}">
+    
+</head>
+<body>
+    <div class="dex2">
+        <div class="form" id="vjk">
+            <h1 class="ggggg">CONNEXION</h1>
+            {%  if messages %}
+            <div class="erro">
+                {% for message in messages %}
+                <p> {{message}} </p>
+                {% endfor %}
+            {% endif %}
+            <form action="{% url 'connexion' %}" method="post" class="formcon">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="name" id=""><br><br>
+                <input type="text" name="password" placeholder="password" id=""><br><br>
+                <button type="submit" style="padding: 10px 20px;background-color: rgb(105, 29, 176);border: none;border: 10px;color: white; border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;">Se connecter</button>
+            </form>
+            <p class="olink">pas encore inscrit! <a href="{% url 'inscription' %}">S'inscrire</a></p>
+        </div>
+    </div>
+</body>
+</html>
