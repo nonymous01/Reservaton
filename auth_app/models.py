@@ -4,7 +4,9 @@ from django.db import models
 class Utilisateur(models.Model):
     username = models.CharField(max_length=100)
     email = models.EmailField(default="youssef@gmail.com",unique=True)
+    telephone= models.IntegerField(blank=False, null=True)
     password = models.CharField(max_length=100)
+
 
 
 class Client(models.Model):
@@ -20,7 +22,6 @@ class Client(models.Model):
     telephone= models.CharField(max_length=100,blank=False, null=True)
     Nombre_de_personnes= models.IntegerField(blank=False, null=True)
     status= models.BooleanField(default=False,blank=False)
-
 
 
     

@@ -1,45 +1,8 @@
-{% load static %}
+  {% extends "auth_app/bare.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>info user</title>
-    <link rel="stylesheet" href="{% static 'auth_app/styles.css' %}">
-</head>
-<body>
-   <section class="section">
-       <div class="conternar_1">
-        <div class="entete1">🗓️ 16 années d'expérience</div>
-        <div class="entete2"> 🔷97% clients ravis</div>
-        <div class="entete3">👍👍🏿 Satisfait ou remboursé</div>
-        <div class="entete4">✔️ Artisans vérifiés</div>
-       </div>
-       <div class="conternar_2">
-        <div class="nav">nav 1</div>
-        <div class="nav1"><input type="search" name="recherche" id=""></div>
-        <div class="nav2">
-            <div class="sous1">
-                <div class="compte">🙍🏻</div>
-                <div class="compte1">COMPTE</div>
-            </div>
-            <div class="sous2">
-                <div class="devis">📖</div>
-                <div class="devis1"> DEVIS </div>
-            </div>
-            <div class="sous3">📞+225 0759177681</div>
-        </div>
-       </div>
-       <div class="conternar_3">
-        <div class="tire0"><strong>lorem</strong> </div>
-        <div class="tire1"><strong>lorem</strong></div>
-        <div class="tire2"><strong>lorem</strong></div>
-        <div class="tire3"><strong>lorem</strong></div>
-        <div class="tire4"><strong>lorem</strong></div>
-        <div class="tire5"><strong>lorem</strong></div>
-       </div>
-   </section>
+{% load static %}
+{% block content %}
+
 
    <section class="info-user">
         <div class="info0"><a href="">< Retour</a></div>
@@ -50,10 +13,10 @@
         <div class="info3"><a href="">Modifier ma photo</a></div>
         <div class="local">
             <div class="info4">
-                <h3>Nom :</h3>
-                <h3>Prenoms :</h3>
-                <h3>email :</h3>
-                <h3>Numeros :</h3>
+                <h5>Nom : {{ username }} </h4>
+                <h4>Prenoms : Anonymous</h4>
+                <h4>email : {{ email }} </h4>
+                <h4>Numeros : 010101010101</h4>
             </div>
         <div class="info5">
             <h3>ADRESSE DE FACTURATION</h3>
@@ -68,12 +31,62 @@
         <div class="artisan"><strong>Besoin d'un artisan :</strong></div>
         <div class="artisan1"><a href=""><div class="over">Trouver un artisan</div></a></div>
     </div>
-    <div class="group2">
-        <div class="artisan">Besoin d'aide ?</div>
-        <div class="artisan">📞+225 0759177681</div>
-        <div class="groupe3"></div>
-        <div class="groupe4"></div>
+    <div class="group2"><br>
+        <div class="groupe1">Besoin d'aide ?
+            <br><br>
+            <p><b style="color: rgb(203, 88, 0);">📞+225 0759177681</b></p><br>
+        </div>
+        <div class="groupe2">
+            <div class="im1"><img src="{% static 'auth_app/image/uzumaki.jfif'  %}" alt="" height="70px"></div>
+            <div class="im2"><img src="{% static 'auth_app/image/uzumaki.jfif'  %}" alt="" height="70px"></div>
+        </div>
+        <div class="groupe3">
+            <div class="im1 azert">youssef</div>
+            <div class="im2 azert">Anonymous</div>
+        </div>
+        <div class="groupe4"><p>Du lundi au vendredi de 8H à 16H</p></div>
     </div>
    </hgroup>
-</body>
-</html>
+   <footer>
+        <div class="foot1">
+            <br>
+        <p class="azerty"><b>Nos prestations</b></p><br><hr><br>
+        Electricien <br><br>
+        Plombier <br><br>
+        Serrurier <br><br>
+        Chauffagiste <br><br>
+        Peintre <br><br>
+        Menuisier <br><br>
+        Carreleur <br><br>
+        Architecte <br><br>
+        Tous les métiers du bâtiment
+        </div>
+        <div class="foot2">
+            <br>
+            <p class="azerty"> <strong>À propos</strong></p><br><hr><br>
+
+            Nos solutions pour les pros<br><br>
+            Qui sommes-nous ?<br><br>
+            Blog actu
+            Nos Partenaires<br><br>
+            Presse<br><br>
+            CGV et mentions légales<br><br>
+            Comment ça marche?
+        </div>
+        <div class="foot3">
+            <br>
+            <p class="azerty"><strong> Support et contact</strong></p><br><hr><br>
+            0759177681<br><br>
+            Forum pour vos questions bâtiment<br><br>
+            <p class="azerty"><strong> Suivez-nous !</strong></p><br><hr>
+            <div class="comptes">
+                <p><a href=""><b>Linkedin</b></a></p>
+                <p><a href=""><b>Youtube</b></a></p>
+                <p><a href=""><b>Instagram</b></a></p>
+            </div>
+        </div>
+        
+   </footer>
+   <div class="mel">© 2023-2024 Artisan.com</div>
+
+{% endblock content %}
